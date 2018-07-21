@@ -5,7 +5,7 @@ def encode_string( origin_message, crypt_key):
 
     for i in range(len( origin_message )):
     
-        c = ord(origin_message[i]) + ord(crypt_key[i2]) - 97 
+        c = ord(origin_message[i]) + ord(crypt_key[i2]) - ord('a')
 
         if c > ord('z'): c = c- 26
 
@@ -14,7 +14,7 @@ def encode_string( origin_message, crypt_key):
         if i2 == (len( crypt_key ) - 1):
             i2 = 0
         else:
-            i2 = i2 + 1
+            i2 += 1
 
     return encoded_string
 
