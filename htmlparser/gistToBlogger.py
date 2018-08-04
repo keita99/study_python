@@ -1,5 +1,7 @@
+#
+# Gist Embed code to Blogger html script
+#
 
-#gistEmbedCode = '<script src="https://gist.github.com/keita99/2f0edc76505167a2844ce2222e14b5c6.js"></script>'
 gistEmbedCode = str(input("Please input Gist Embed code : "))
 
 pickGistCode = gistEmbedCode.rsplit('/')[4]
